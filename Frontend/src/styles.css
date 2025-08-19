@@ -1,0 +1,182 @@
+/* ---- форма ---- */
+.login-form {
+  width: 90%;
+  max-width: 400px;
+  margin: 8% auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.login-form__title {
+  background: linear-gradient(135deg, #004aad, #3473b7);
+  color: #fff;
+  text-align: center;
+  padding: 14px;
+  margin: -20px -20px 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.login-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.login-form__label {
+  font-size: 14px;
+  color: #222;
+}
+.login-form__input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+.login-form__input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+.is-invalid {
+  border-color: #e63946;
+}
+.login-form__hint--error {
+  font-size: 12px;
+  color: #e63946;
+}
+.login-form__password {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.login-form__password .login-form__input {
+  flex: 1;
+}
+.login-form__toggle {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #0056d2;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+.login-form__actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.login-form__submit {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #0a66ff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+.login-form__submit:disabled {
+  background: #9ecbf9;
+  cursor: not-allowed;
+}
+.login-form__register,
+.login-form__cancel {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #0a66ff;
+  background: #e8f0ff;
+  color: #0a41c5;
+  font-weight: 700;
+}
+
+/* ---- страницы ---- */
+.page {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+.page-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 24px;
+}
+.card {
+  width: min(960px, 96vw);
+  background: #fff;
+  color: #111;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+}
+.card__title {
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.btn {
+  border: 1px solid #d0d7de;
+  background: #fff;
+  color: #111;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.05s;
+}
+.btn:hover {
+  transform: scale(1.02);
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn--primary {
+  background: #0a66ff;
+  color: #fff;
+  border-color: #0a66ff;
+}
+.btn--danger {
+  background: #d92c2c;
+  color: #fff;
+  border-color: #d92c2c;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+.list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  color: #111;
+}
+.list__item span {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

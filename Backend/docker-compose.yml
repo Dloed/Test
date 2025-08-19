@@ -1,0 +1,16 @@
+
+services:
+  db:
+    image: postgres:15
+    container_name: user_service_db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: usersdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - ./sql:/docker-entrypoint-initdb.d
+volumes:
+  db_data:
